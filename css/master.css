@@ -5,6 +5,20 @@
   font-family: Montserrat, sans-serif;
 }
 
+nav {
+  /* transform: rotate(-90deg); */
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  text-decoration: none;
+  transform: rotate(-90deg);
+  padding: 0em 3em 4em 0em;
+  color: #ff5c5c;
+}
+
 .welcome-message {
   margin: 0 auto;
   width: 44%
@@ -19,20 +33,20 @@ h3 {
   color: #ff5c5c;
 }
 
-.about {
+#about {
   letter-spacing: 0.1em;
   width: 60%;
   margin: 9em;
 }
 
-.project-section {
+#project-section {
   width: 80%;
   position: relative;
   /* border: 1px solid red; */
   margin: 9em;
 }
 
-.project-section .work {
+#project-section .work {
   display: flex;
   flex-direction: row;
   overflow-y: scroll;
@@ -95,7 +109,7 @@ h3 {
 }
 
 
-.contact {
+#contact {
   margin: 9em;
 }
 
