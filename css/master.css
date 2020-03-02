@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap');
+
+* {
+  /* font-family: 'Open Sans'; */
+  font-family: Montserrat, sans-serif;
+}
+
+.welcome-message {
+  margin: 0 auto;
+  width: 44%
+}
+
+h1 {
+  font-size: 5em;
+}
+
+h3 {
+  font-size: 2em;
+  color: #ff5c5c;
+}
+
+.about {
+  letter-spacing: 0.1em;
+  width: 60%;
+  margin: 9em;
+}
+
+.project-section {
+  width: 80%;
+  position: relative;
+  /* border: 1px solid red; */
+  margin: 9em;
+}
+
+.project-section .work {
+  display: flex;
+  flex-direction: row;
+  overflow-y: scroll;
+  /* border: 1px solid black; */
+}
+
+.project {
+  /* height: 80px; */
+  min-height: 500px;
+  /* width: max-content; */
+  min-width: 1000px;
+  /* border: 1px solid blue; */
+  /* padding-right: 2em; */
+  margin: 2em;
+  border-radius: 0.5em;
+  overflow: hidden;
+  display: flex;
+  justify-items: center;
+
+}
+
+.work img {
+  width: 100%;
+  /* position: absolute; */
+  padding: 6em 0 0 6em;
+}
+
+.project-img {
+  /* border: 1px solid red; */
+  width: 60%;
+  height: 100%;
+
+}
+
+.project-info {
+  padding: 2em;
+  /* border: 1px solid black; */
+  width: 40%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.stalk {
+  background-color: #fff3ea;
+}
+
+.one {
+  background-color: #9e297f;
+  color: white;
+}
+
+.slug {
+  background-color: #2d2d2d;
+  color: white;
+}
+
+.ttt {
+  background-color: #3d77ea;
+  color: white;
+}
+
+
+.contact {
+  margin: 9em;
+}
+
+a {
+text-decoration: none;
+}
