@@ -20,9 +20,27 @@ nav a {
 }
 
 .welcome-message {
-  margin: 0 auto;
-  width: 44%
+  margin: 9em auto;
+  width: 75%;
+  margin-top: 9em;
+  /* border: solid; */
+  display: flex;
+  position: relative;
+  justify-content: center;
 }
+
+#profile-message {
+  z-index: 2;
+  position: absolute;
+  width: 55%;
+}
+
+#profile-image {
+  margin-left: 24em;
+  z-index: -1;
+  position: relative;
+}
+
 
 h1 {
   font-size: 5em;
@@ -34,18 +52,28 @@ h3 {
 }
 
 #about-skills {
-  margin: 9em;
+  /* margin: 9em; */
+  display: flex;
+  margin: 0 9em;
+  height: 100vh;
 }
 
 
 #about {
+  /* width: 75%; */
+  margin-right: 5em;
+}
+
+#about p {
+  line-height: 1.5;
+  font-size: large;
   letter-spacing: 0.1em;
-  width: 75%;
+
 }
 
 #skills i {
   color: #ff5b5c;
-  font-size: 5em;
+  font-size: 4em;
   margin: 0.2em;
   line-height: 1.5;
 }
@@ -54,7 +82,9 @@ h3 {
   width: 80%;
   position: relative;
   /* border: 1px solid red; */
-  margin: 9em;
+  /* margin: 9em; */
+  margin: 0 9em;
+  height: 100vh;
 }
 
 #project-section .work {
@@ -121,7 +151,9 @@ h3 {
 
 
 #contact {
-  margin: 9em;
+  /* margin: 9em; */
+  margin: 0 9em;
+  height: 100vh;
 }
 
 a {
