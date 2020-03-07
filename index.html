@@ -2,25 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <!-- <meta name="viewport" content="width=1400"> -->
+  <meta name="HandheldFriendly" content="true">
+
   <title>Porfolio</title>
-
-
   <script src="js/main.js" charset="utf-8"></script>
   <link rel="stylesheet" href="css/master.css">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 </head>
 <body>
   <header>
+    <!-- <div id="logo">
+      <img src="assets/JT-logo.png" alt="">
+    </div> -->
     <nav>
-      <a href="#about"><p>about.</p></a>
+      <a href="#skills"><p>skills.</p></a>
       <a href="#project-section"><p>projects.</p></a>
       <a href="#contact"><p>contact.</p></a>
+      <a href="assets/jordan-trickett-cv.pdf" download="jordan-trickett-cv" target="_blank" class="download">
+        <p>cv.</p>
+      </a>
     </nav>
   </header>
 
-  <div class="welcome-message">
+
     <div id="profile-container">
       <div id="profile-message">
         <h1>Hello, I'm Jordan Trickett</h1>
@@ -29,45 +37,7 @@
       <div id="profile-image">
         <img src="assets/me.jpeg" alt="">
       </div>
-      </div>
-  </div>
-
-<div id="about-skills">
-    <div id="about">
-      <h1>about.</h1>
-      <p>Determined (and aspiring) full-stack developer, with 6 years of marketing experience, delivering projects for companies like UBER, Amazon and Adidas. <br><br>
-
-  I love the process of bringing ideas to life and I’m excited about the opportunity to apply the same vision and creative thinking skills from my years in marketing to the many layers of modern web app development. <br><br>
-
-  I value collaboration highly and coming from an agency background I am used to working in cross-functional teams that are client-facing. I also know well, that nothing ever goes completely to plan so the ability to adapt and troubleshoot on the go is important. <br><br>
-
-   You wouldn’t be wrong in thinking that I lean towards front-end development. But don’t box me in just yet. I’m ambitious and want to learn as much as I can. <br><br>
-  </p>
     </div>
-
-    <div id="skills">
-      <h1>skills.</h1>
-      <i class="devicon-github-plain"></i>
-      <i class="devicon-html5-plain-wordmark"></i>
-      <i class="devicon-css3-plain-wordmark"></i>
-      <i class="devicon-javascript-plain"></i>
-      <i class="devicon-react-original"></i>
-      <i class="devicon-vuejs-plain"></i>
-      <i class="devicon-webpack-plain"></i>
-      <i class="devicon-jquery-plain-wordmark"></i>
-      <i class="devicon-nodejs-plain"></i>
-      <i class="devicon-rails-plain-wordmark"></i>
-      <i class="devicon-ruby-plain"></i>
-      <i class="devicon-mongodb-plain-wordmark"></i>
-      <i class="devicon-express-original"></i>
-      <i class="devicon-postgresql-plain-wordmark"></i>
-      <i class="devicon-heroku-plain-wordmark"></i>
-      <i class="devicon-trello-plain"></i>
-      <i class="devicon-illustrator-plain"></i>
-      <i class="devicon-photoshop-plain"></i>
-      <i class="devicon-wordpress-plain"></i>
-    </div>
-  </div>
 
 
   <section id="project-section">
@@ -98,9 +68,17 @@
               </ul>
           </div>
         </div>
-        <div class="project-img">
-            <img src="assets/stalk.png" alt="">
+
+        <div class="project-display">
+          <div class="project-img">
+              <img src="assets/stalk.png" alt="">
+          </div>
+          <div class="links">
+            <a href="https://jaytees.github.io/frontend-stalk" target="_blank"><i class="devicon-chrome-plain"></i>Live Link</a>
+            <a href="https://github.com/jaytees/frontend-stalk" target="_blank"> <i class="devicon-github-plain"></i> READ ME</a>
+          </div>
         </div>
+
     </div>
     <div class="project slug">
       <div class="project-info">
@@ -121,17 +99,24 @@
             <i class="devicon-illustrator-plain"></i>
           <p class="heading">Features.</p>
             <ul>
-              <li>Select news outlets to subscribed to</li>
-              <li>Tailor feed to interests by categories</li>
+              <li>Select news outlets to subscribe to</li>
+              <li>Tailor feed by outlets and categories</li>
               <li>Toggle views</li>
               <li>Dynamic dashboard</li>
             </ul>
           </div>
       </div>
-      <div class="project-img">
-        <img src="assets/slug.png" alt="">
+      <div class="project-display">
+        <div class="project-img">
+            <img src="assets/slug.png" alt="">
+        </div>
+        <div class="links">
+          <a href="https://jaytees.github.io/frontend-slug" target="_blank"><i class="devicon-chrome-plain"></i>Live Link</a>
+          <a href="https://github.com/jaytees/frontend-slug" target="_blank"> <i class="devicon-github-plain"></i> READ ME</a>
+        </div>
       </div>
     </div>
+
     <div class="project one">
       <div class="project-info">
         <div class="project-title">
@@ -158,8 +143,14 @@
           </ul>
           </div>
       </div>
-      <div class="project-img">
-        <img src="assets/screenshot-1.png" alt="">
+      <div class="project-display">
+        <div class="project-img">
+            <img src="assets/screenshot-1.png" alt="">
+        </div>
+        <div class="links">
+          <a href="https://jaytees-one.herokuapp.com" target="_blank"><i class="devicon-chrome-plain"></i>Live Link</a>
+          <a href="https://github.com/jaytees/project-one" target="_blank"> <i class="devicon-github-plain"></i> READ ME</a>
+        </div>
       </div>
     </div>
     <div class="project ttt">
@@ -179,15 +170,21 @@
             <i class="devicon-jquery-plain-wordmark"></i>
           <p class="heading">Features.</p>
             <ul>
-              <li>Select news outlets to subscribed to</li>
-              <li>Tailor feed to interests by categories</li>
-              <li>Toggle views</li>
-              <li>Dynamic dashboard</li>
+              <li>1 and 2 player</li>
+              <li>Score Tracking</li>
+              <li>Semi intelligent Ai, checks for blocks and wins</li>
+              <li>Turn indicator</li>
             </ul>
           </div>
       </div>
-      <div class="project-img">
-        <img src="assets/ttt.png" alt="">
+      <div class="project-display">
+        <div class="project-img">
+            <img src="assets/ttt.png" alt="">
+        </div>
+        <div class="links">
+          <a href="https://jaytees.github.io/tic-tac-toe" target="_blank"><i class="devicon-chrome-plain"></i>Live Link</a>
+          <a href="https://github.com/jaytees/tic-tac-toe" target="_blank"> <i class="devicon-github-plain"></i> READ ME</a>
+        </div>
       </div>
     </div>
     <div class="fakeblock">
@@ -195,11 +192,51 @@
     </div>
   </section>
 
+  <div id="about-skills">
+
+    <div id="about">
+      <h1>about.</h1>
+      <p>Determined (and aspiring) full-stack developer, with 6 years of marketing experience, delivering projects for companies like UBER, Amazon and Adidas. <br><br>
+
+  I love the process of bringing ideas to life and I’m excited about the opportunity to apply the same vision and creative thinking skills from my years in marketing to the many layers of modern web app development. <br><br>
+
+  I value collaboration highly and coming from an agency background I am used to working in cross-functional teams that are client-facing. I also know well, that nothing ever goes completely to plan so the ability to adapt and troubleshoot on the go is important. <br><br>
+
+   You wouldn’t be wrong in thinking that I lean towards front-end development. But don’t box me in just yet. I’m ambitious and want to learn as much as I can. <br><br>
+  </p>
+    </div>
+    
+    <div id="skills">
+      <h1>skills.</h1>
+      <i class="devicon-github-plain"></i>
+      <i class="devicon-html5-plain-wordmark"></i>
+      <i class="devicon-css3-plain-wordmark"></i>
+      <i class="devicon-javascript-plain"></i>
+      <i class="devicon-react-original"></i>
+      <i class="devicon-vuejs-plain"></i>
+      <i class="devicon-webpack-plain"></i>
+      <i class="devicon-jquery-plain-wordmark"></i>
+      <i class="devicon-nodejs-plain"></i>
+      <i class="devicon-rails-plain-wordmark"></i>
+      <i class="devicon-ruby-plain"></i>
+      <i class="devicon-mongodb-plain-wordmark"></i>
+      <i class="devicon-express-original"></i>
+      <i class="devicon-postgresql-plain-wordmark"></i>
+      <i class="devicon-heroku-plain-wordmark"></i>
+      <i class="devicon-illustrator-plain"></i>
+      <i class="devicon-photoshop-plain"></i>
+      <i class="devicon-wordpress-plain"></i>
+    </div>
+  </div>
+
   <section id="contact">
     <h1>contact.</h1>
     <a href="mailto:jordan1trickett@gmail.com"><h3>jordan1trickett@gmail.com</h3></a>
     <a href="https://www.linkedin.com/in/jordantrickett/" target="_blank"><h3>Linkedin</h3></a>
     <a href="https://github.com/jaytees" target="_blank"><h3>Github</h3></a>
+    <a href="assets/jordan-trickett-cv.pdf" download="jordan-trickett-cv" target="_blank">
+      <h3>Download CV</h3>
+    </a>
   </section>
 
 

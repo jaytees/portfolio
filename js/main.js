@@ -1,19 +1,23 @@
 console.log('hello world');
 
-
+//project animation
 let scrollDiv;
 let projectDiv;
 let isScrolling = null;
 
+//smooth scroll
+let navLinkProjects;
+
 window.onload=function(){
     scrollDiv = document.querySelector('.work');
     scrollDiv.addEventListener("wheel", onScroll, false);
-
     projectDiv = document.querySelectorAll('.project');
+
+
 }
 
 
-function onScroll(e) {
+const onScroll = (e) => {
 
     if (event.deltaX > 0) {
         projectDiv.forEach( item => {
