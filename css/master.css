@@ -27,7 +27,7 @@ nav {
 
 nav a {
   transform: rotate(-90deg);
-  padding: 0em 3em 4em 0em;
+  padding: 0em 0 7em 5em;
   color: #ff5c5c;
 }
 
