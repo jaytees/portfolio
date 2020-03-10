@@ -409,9 +409,11 @@ h3 {
     height: 45%;
     width: 100%;
   }
-  .project-display img {
-    width: 90%;
-    margin: auto;
+  .project-img{
+    padding: 6% 6% 4% 6%;
+  }
+  .project-img img {
+    margin: 0;
   }
   .project .links {
     width: 70%;
