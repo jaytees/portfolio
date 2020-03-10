@@ -217,7 +217,7 @@ h3 {
 
 .project-subheading {
   /* border: solid black; */
-  margin-bottom: 3em;
+  margin-bottom: 1.5em;
   height: 2em;
 
 }
@@ -234,6 +234,7 @@ h3 {
 
 .project-content p,li {
   font-weight: 300;
+  font-size: 90%;
 }
 
 .project-content .heading {
@@ -441,10 +442,7 @@ h3 {
 
   #profile-container {
     display: flex;
-    /* flex-direction: column;
-    justify-content: center; */
     margin-left: 3em;
-    /* margin: 5em auto; */
   }
   #profile-message {
     position: absolute;
@@ -472,6 +470,56 @@ h3 {
 /* project section */
   #project-section {
     margin-left: 3em;
+    margin-bottom: 3em;
+  }
+  #project-section h1 {
+    margin-bottom: 0.2em;
+  }
+  #project-section .work {
+    padding: 1em;
+    height: 90%;
+    flex-direction: column;
+    overflow-x: scroll;
+    overflow-y: none;
+  }
+  .project {
+    min-height: 532px;
+    min-width: 100%;
+    margin-bottom: 1em;
+  }
+  .project-info {
+    height: 68%;
+  }
+  .project-title {
+    height: 1em;
+  }
+  .project-title h2 {
+    font-size: 1em;
+  }
+  .project-subheading {
+    margin-bottom: 1em;
+  }
+  .project-subheading h4 {
+    font-size: 0.7em;
+    margin: 0;
+    font-weight: 600;
+  }
+  .project-content .heading {
+    font-size: 0.8em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+  .project-content i {
+    font-size: 1em;
+  }
+  .project-content ul {
+    padding-left: 1.3em;
+  }
+  .project-content p, li {
+    font-size: 70%;
+  }
+  .project-display .links, a {
+    font-size: smaller;
   }
 
 

@@ -3,7 +3,9 @@ console.log('hello world');
 //project animation
 let scrollDiv;
 let projectDiv;
-let isScrolling = null;
+let isScrolling = null
+
+const mq = window.matchMedia( "(max-width: 600px)" );
 
 //smooth scroll
 let navLinkProjects;
@@ -18,6 +20,9 @@ window.onload=function(){
 
 
 const onScroll = (e) => {
+
+  //if window > 600px
+  if (!mq.matches) {
 
     if (event.deltaX > 0) {
         projectDiv.forEach( item => {
@@ -41,4 +46,7 @@ const onScroll = (e) => {
           item.classList.remove('animate-right', 'animate-left');
         });
     }, 200);
+
+  }
+
 }
