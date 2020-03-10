@@ -518,8 +518,12 @@ h3 {
   .project-content p, li {
     font-size: 70%;
   }
-  .project-display .links, a {
+  .project-display {
+    height: 37%;
+  }
+  .project .links {
     font-size: smaller;
+    margin-bottom: 1em;
   }
 
 
