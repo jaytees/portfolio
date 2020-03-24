@@ -1,5 +1,3 @@
-console.log('hello world');
-
 //project animation
 let scrollDiv;
 let projectDiv;
