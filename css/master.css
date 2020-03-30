@@ -31,11 +31,11 @@ nav a {
   color: #ff5c5c;
 }
 
-nav .nav__skills {
+.nav__skills {
   padding-left: 6.3em;
 }
 
-nav .nav__contact {
+.nav__contact {
   padding-left: 5.3em;
 }
 
@@ -60,6 +60,17 @@ nav .download {
   border-color: #ff5c5c;
   transition: width 350ms ease-in-out;
   width: 70%;
+}
+
+.nav__link--active:after {
+  border-bottom: 1px solid #ff5c5c;
+  bottom: -1px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 70%;
+  visibility: visible;
 }
 
 
