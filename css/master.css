@@ -57,6 +57,22 @@ nav .download {
   justify-content: center;
 } */
 
+.fa-ul {
+  list-style-type: none;
+  margin-left: 1em;
+  padding-left: 0;
+}
+
+.fa-li {
+  position: absolute;
+  left: 0;
+  width: 0;
+  top: auto;
+  text-align: center;
+  font-size: xx-large;
+  color: #ff5b5b;
+}
+
 #profile-container {
   box-sizing: border-box;
   margin: 9em auto;
@@ -310,7 +326,7 @@ h3 {
 }
 
 #contact h3 {
-  margin-left: 1em;
+  margin-left: 1.5em;
 }
 
 
@@ -380,7 +396,10 @@ h3 {
 
 /* contact */
   #contact {
-    margin-left: 6em
+    margin-left: 6em;
+  }
+  .fa-li {
+    font-size: x-large;
   }
 }
 
@@ -552,8 +571,14 @@ h3 {
     margin-left: 3em;
   }
   #contact h3 {
-    margin-left: 0.5em;
+    margin-left: 1.5em;
     font-size: 1.4em;
+  }
+  #contact li {
+    margin-bottom: 2em;
+  }
+  .fa-li {
+    font-size: large;
   }
 
 }
