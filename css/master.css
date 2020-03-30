@@ -44,7 +44,7 @@ nav .download {
   padding-left: 7.6em;
 }
 
-nav a:after {
+.link--animate:after {
   border-bottom: 1px solid #ff5c5c;
   bottom: -1px;
   content: " ";
@@ -55,7 +55,7 @@ nav a:after {
   width: 0;
   visibility: hidden;
 }
-nav a:hover:after {
+.link--animate:hover:after {
   visibility: visible;
   border-color: #ff5c5c;
   transition: width 350ms ease-in-out;
@@ -302,6 +302,12 @@ h3 {
 
 #contact h3 {
   margin-left: 1.5em;
+  width: max-content;
+}
+
+h3.link--animate:after {
+  border-bottom: 2px solid #ff5c5c;
+  bottom: -2px;
 }
 
 .fa-ul {
