@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap");
 
 * {
   /* font-family: 'Open Sans'; */
@@ -6,7 +6,7 @@
 }
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
   height: 100%;
 }
 
@@ -15,14 +15,14 @@ body {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 nav {
   position: fixed;
   display: flex;
   flex-direction: column;
-  margin-top: 2em;
+  margin-top: 4em;
 }
 
 nav a {
@@ -73,8 +73,6 @@ nav .download {
   visibility: visible;
 }
 
-
-
 #profile-container {
   box-sizing: border-box;
   margin: 9em auto;
@@ -89,12 +87,15 @@ nav .download {
   width: 594px;
 }
 
+#profile-message h3 {
+  letter-spacing: 0.05px;
+}
+
 #profile-image {
   margin-left: 24em;
   z-index: -1;
   position: relative;
 }
-
 
 h1 {
   font-size: 5em;
@@ -105,13 +106,11 @@ h3 {
   color: #ff5c5c;
 }
 
-
 #about-skills {
   display: flex;
   margin: 0 9em;
   height: 100vh;
 }
-
 
 #about {
   margin-right: 5em;
@@ -143,6 +142,41 @@ h3 {
   height: 100vh;
 }
 
+#project-section h1 {
+  margin-bottom: 0.5em;
+}
+.scroll {
+  display: none;
+}
+#project-section:hover .scroll {
+  visibility: visible;
+}
+.scroll__control-bottom {
+  margin-left: 2.2em;
+}
+.scroll__text {
+  width: max-content;
+  margin: 0;
+  text-align: center;
+  color: #ff5b5c;
+}
+
+.swipe {
+  visibility: hidden;
+  margin-left: 1em;
+}
+#project-section:hover .swipe {
+  visibility: visible;
+}
+.swipe__control-bottom {
+  margin-left: 2.2em;
+}
+.swipe__text {
+  width: max-content;
+  margin: 0;
+  text-align: center;
+  color: #ff5b5c;
+}
 
 #project-section .work {
   box-sizing: border-box;
@@ -161,9 +195,7 @@ h3 {
   min-width: 85%;
   margin-right: 5em;
   overflow: hidden;
-
 }
-
 
 .project-info {
   box-sizing: border-box;
@@ -202,7 +234,6 @@ h3 {
   height: 90%;
 }
 
-
 .project-img img {
   width: 100%;
   margin-left: 2em;
@@ -214,7 +245,7 @@ h3 {
   align-items: flex-end;
 }
 
-.project-title h2  {
+.project-title h2 {
   margin: 0;
   font-weight: 700;
   font-size: 3em;
@@ -234,7 +265,8 @@ h3 {
   height: 64%;
 }
 
-.project-content p,li {
+.project-content p,
+li {
   font-weight: 300;
   font-size: 90%;
 }
@@ -260,13 +292,13 @@ h3 {
 
 .one {
   /* background-color: #9e297f; */
-  background-color: #69306D;
+  background-color: #69306d;
   color: #fdecff;
 }
 
 .ttt {
   /* background-color: #3d77ea; */
-  background-color: #84ACCE;
+  background-color: #84acce;
   color: #f4faff;
   margin-right: 2em;
 }
@@ -291,7 +323,6 @@ h3 {
   transition-timing-function: ease-out;
   transition: 1s;
   transform: perspective(0px) rotateY(0deg);
-
 }
 
 .project:hover {
@@ -303,7 +334,6 @@ h3 {
   /* box-shadow: -2px 4px 20px 2px rgba(173, 173, 173, 0.71); */
   /* transform: scale(1.  1); */
 }
-
 
 #contact {
   /* margin: 9em; */
@@ -337,10 +367,8 @@ h3.link--animate:after {
   color: #ff5b5b;
 }
 
-
 /* below this make things abit smaller */
 @media (max-width: 1024px) {
-
   #profile-message {
     width: 396px;
   }
@@ -360,8 +388,7 @@ h3.link--animate:after {
     width: 25em;
   }
 
-
-/* project section */
+  /* project section */
   #project-section {
     margin-left: 6em;
   }
@@ -380,8 +407,7 @@ h3.link--animate:after {
     width: 70%;
   }
 
-
-/* about and skills */
+  /* about and skills */
   #about-skills {
     margin-left: 6em;
   }
@@ -401,8 +427,7 @@ h3.link--animate:after {
     line-height: 1.5;
   }
 
-
-/* contact */
+  /* contact */
   #contact {
     margin-left: 6em;
   }
@@ -411,19 +436,18 @@ h3.link--animate:after {
   }
 }
 
-
 @media (max-width: 770px) {
-/* project section */
+  /* project section */
   .project {
     flex-direction: column;
   }
   .project-title {
     height: 1.5em;
   }
-  .project-title h2{
+  .project-title h2 {
     font-size: 1.5em;
   }
-  .project-subheading{
+  .project-subheading {
     margin-bottom: 0;
   }
   .project-info {
@@ -433,11 +457,11 @@ h3.link--animate:after {
   .project-content i {
     font-size: 1.5em;
   }
-  .project-display{
+  .project-display {
     height: 45%;
     width: 100%;
   }
-  .project-img{
+  .project-img {
     padding: 6% 6% 4% 6%;
   }
   .project-img img {
@@ -447,7 +471,7 @@ h3.link--animate:after {
     width: 70%;
   }
 
-/* about and skills */
+  /* about and skills */
   #about-skills {
     /* margin-left: 3em; */
     flex-direction: column-reverse;
@@ -463,10 +487,7 @@ h3.link--animate:after {
   }
 }
 
-
-
 @media (max-width: 600px) {
-
   #profile-container {
     display: flex;
     margin-left: 3em;
@@ -494,13 +515,20 @@ h3.link--animate:after {
     margin-left: 6em;
   }
 
-/* project section */
+  /* project section */
   #project-section {
     margin-left: 3em;
     margin-bottom: 3em;
   }
   #project-section h1 {
-    margin-bottom: 0.2em;
+    margin-bottom: 0.5em;
+  }
+  .swipe {
+    display: none;
+  }
+  .scroll {
+    display: block;
+    margin: 0 0 0.5em 1em;
   }
   #project-section .work {
     padding: 1em;
@@ -542,7 +570,8 @@ h3.link--animate:after {
   .project-content ul {
     padding-left: 1.3em;
   }
-  .project-content p, li {
+  .project-content p,
+  li {
     font-size: 70%;
   }
   .project-display {
@@ -553,9 +582,7 @@ h3.link--animate:after {
     margin-bottom: 1em;
   }
 
-
-
-/* about and skills */
+  /* about and skills */
   #about-skills {
     /* margin-left: 3em; */
     height: auto;
@@ -573,8 +600,7 @@ h3.link--animate:after {
     font-size: 1.8em;
   }
 
-
-/* contact */
+  /* contact */
   #contact {
     margin-left: 3em;
   }
@@ -588,5 +614,4 @@ h3.link--animate:after {
   .fa-li {
     font-size: large;
   }
-
 }
