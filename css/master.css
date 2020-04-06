@@ -265,10 +265,15 @@ h3 {
   height: 64%;
 }
 
-.project-content p,
-li {
+.project-content p {
   font-weight: 300;
   font-size: 90%;
+}
+
+.project-content li {
+  font-weight: 300;
+  font-size: 80%;
+  margin-left: -1em;
 }
 
 .project-content .heading {
@@ -454,8 +459,14 @@ h3.link--animate:after {
     height: 55%;
     width: 100%;
   }
+  .project-content .heading {
+    margin-bottom: 0.2em;
+  }
   .project-content i {
     font-size: 1.5em;
+  }
+  .project-content li {
+    font-size: 65%;
   }
   .project-display {
     height: 45%;
@@ -543,7 +554,7 @@ h3.link--animate:after {
     margin-bottom: 1em;
   }
   .project-info {
-    height: 68%;
+    height: 58%;
   }
   .project-title {
     height: 1em;
@@ -552,7 +563,7 @@ h3.link--animate:after {
     font-size: 1em;
   }
   .project-subheading {
-    margin-bottom: 1em;
+    margin-bottom: 0;
   }
   .project-subheading h4 {
     font-size: 0.7em;
@@ -570,12 +581,15 @@ h3.link--animate:after {
   .project-content ul {
     padding-left: 1.3em;
   }
-  .project-content p,
-  li {
+  .project-content p {
     font-size: 70%;
   }
+  .project-content li {
+    font-size: 62%;
+  }
+
   .project-display {
-    height: 37%;
+    height: 42%;
   }
   .project .links {
     font-size: smaller;
