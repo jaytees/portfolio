@@ -529,7 +529,7 @@ h3.link--animate:after {
   /* project section */
   #project-section {
     margin-left: 3em;
-    margin-bottom: 3em;
+    margin-bottom: 10em;
   }
   #project-section h1 {
     margin-bottom: 0.5em;
@@ -612,6 +612,7 @@ h3.link--animate:after {
   #skills i {
     min-width: 280px;
     font-size: 1.8em;
+    display: inline;
   }
 
   /* contact */
