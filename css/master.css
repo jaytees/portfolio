@@ -217,6 +217,7 @@ h3 {
   width: 50%;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1em;
 }
 
 .links a {
@@ -254,6 +255,7 @@ h3 {
 .project-subheading {
   margin-bottom: 1.5em;
   height: 2em;
+  width: 115%;
 }
 
 .project-subheading h4 {
@@ -263,6 +265,8 @@ h3 {
 
 .project-content {
   height: 64%;
+  width: 115%;
+  margin-left: -10px;
 }
 
 .project-content p {
@@ -276,13 +280,17 @@ h3 {
   margin-left: -1em;
 }
 
-.project-content .heading {
+.project-technology .heading {
   font-weight: 600;
 }
 
-.project-content i {
+.project-technology i {
   font-size: 2em;
   margin: 0.2em;
+}
+
+.project-technology {
+  display: block;
 }
 
 .stalk {
@@ -411,6 +419,9 @@ h3.link--animate:after {
   .project .links {
     width: 70%;
   }
+  .project-technology i {
+    font-size: 1.5em;
+  }
 
   /* about and skills */
   #about-skills {
@@ -456,13 +467,17 @@ h3.link--animate:after {
     margin-bottom: 0;
   }
   .project-info {
-    height: 55%;
+    height: 43%;
     width: 100%;
   }
-  .project-content .heading {
+  .project-technology {
+    align-self: flex-start;
+    padding-left: 2em;
+  }
+  .project-technology .heading {
     margin-bottom: 0.2em;
   }
-  .project-content i {
+  .project-technology i {
     font-size: 1.5em;
   }
   .project-content li {
@@ -473,7 +488,7 @@ h3.link--animate:after {
     width: 100%;
   }
   .project-img {
-    padding: 6% 6% 4% 6%;
+    padding: 4% 6% 4% 6%;
   }
   .project-img img {
     margin: 0;
@@ -554,7 +569,7 @@ h3.link--animate:after {
     margin-bottom: 1em;
   }
   .project-info {
-    height: 58%;
+    height: 50%;
   }
   .project-title {
     height: 1em;
@@ -563,20 +578,24 @@ h3.link--animate:after {
     font-size: 1em;
   }
   .project-subheading {
-    margin-bottom: 0;
+    margin-bottom: -1em;
   }
   .project-subheading h4 {
     font-size: 0.7em;
     margin: 0;
     font-weight: 600;
   }
-  .project-content .heading {
+  .project-technology .heading {
     font-size: 0.8em;
     margin-top: 0;
     margin-bottom: 0.5em;
   }
-  .project-content i {
+  .project-technology i {
     font-size: 1em;
+  }
+  .project-technology {
+    align-self: flex-start;
+    padding-left: 2em;
   }
   .project-content ul {
     padding-left: 1.3em;
@@ -587,7 +606,9 @@ h3.link--animate:after {
   .project-content li {
     font-size: 62%;
   }
-
+  .project-img {
+    padding: 3% 6% 4% 6%;
+  }
   .project-display {
     height: 42%;
   }
