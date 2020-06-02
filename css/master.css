@@ -532,7 +532,7 @@ h3.link--animate:after {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 875px) {
   /* project section */
   .project {
     flex-direction: column;
@@ -596,7 +596,7 @@ h3.link--animate:after {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   #profile-container {
     display: flex;
     margin-left: 3em;
