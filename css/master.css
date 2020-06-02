@@ -678,10 +678,6 @@ h3.link--animate:after {
   .project-technology i {
     font-size: 1em;
   }
-  .project-technology {
-    align-self: flex-start;
-    padding-left: 2em;
-  }
   .project-content ul {
     padding-left: 1.3em;
   }
@@ -693,9 +689,6 @@ h3.link--animate:after {
   }
   .project-img {
     padding: 3% 6% 4% 6%;
-  }
-  .project-display {
-    height: 42%;
   }
   .project .links {
     font-size: smaller;
