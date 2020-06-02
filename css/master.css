@@ -531,7 +531,7 @@ h3.link--animate:after {
   }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 900px) {
   /* project section */
   .project {
     flex-direction: column;
