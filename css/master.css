@@ -284,6 +284,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   width: 50%;
   height: 100%;
 }
@@ -567,11 +568,12 @@ h3.link--animate:after {
     font-size: 65%;
   }
   .project-display {
-    height: 45%;
+    height: 57%;
     width: 100%;
   }
   .project-img {
     padding: 4% 6% 4% 6%;
+    width: 80%;
   }
   .project-img img {
     margin: 0;
@@ -596,7 +598,7 @@ h3.link--animate:after {
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 670px) {
   #profile-container {
     display: flex;
     margin-left: 3em;
