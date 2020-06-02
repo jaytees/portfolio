@@ -340,7 +340,7 @@ h3 {
 
 .project-content {
   height: 64%;
-  width: 100%;
+  width: 110%;
   margin-left: -10px;
 }
 
@@ -353,6 +353,7 @@ h3 {
   font-weight: 300;
   font-size: 80%;
   margin-left: -1em;
+  margin-bottom: 0.2em;
 }
 
 .project-technology .heading {
@@ -456,7 +457,7 @@ h3.link--animate:after {
 }
 
 /* below this make things abit smaller */
-@media (max-width: 1024px) {
+@media (max-width: 1080px) {
   #profile-message {
     width: 396px;
   }
