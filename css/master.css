@@ -491,6 +491,10 @@ h3.link--animate:after {
     min-width: 90%;
     margin-right: 3em;
   }
+  .project-content li {
+    font-size: 90%;
+    margin-bottom: 0.15em;
+  }
   .project .links {
     width: 70%;
   }
@@ -656,7 +660,7 @@ h3.link--animate:after {
     font-size: 1em;
   }
   .project-subheading {
-    margin-bottom: -1em;
+    margin-bottom: -1.5em;
   }
   .project-subheading h4 {
     font-size: 0.7em;
