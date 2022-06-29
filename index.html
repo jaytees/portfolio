@@ -1,293 +1,415 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-04F7PRDYT3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-04F7PRDYT3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-  gtag('config', 'G-04F7PRDYT3');
-  </script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="HandheldFriendly" content="true">
+      gtag('config', 'G-04F7PRDYT3');
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="true" />
 
-  <title>Porfolio</title>
-  <script src="js/main.js" charset="utf-8"></script>
-  <script src="https://kit.fontawesome.com/340ae695bc.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/master.css">
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-</head>
-<body>
-  <header>
-    <nav id="nav">
-      <a class="nav__link nav__skills link--animate" href="#skills">skills.</a>
-      <a class="nav__link nav__projects link--animate" href="#project-section">projects.</a>
-      <a class="nav__link nav__contact link--animate" href="#contact">contact.</a>
-    </nav>
-  </header>
-
-
-    <div id="profile-container">
-      <div id="profile-message">
-        <h1>Hello, I'm Jordan Trickett</h1>
-        <h3>junior full stack developer and creative project manager.</h3>
+    <title>Jordan Trickett | Porfolio</title>
+    <script src="js/main.js" charset="utf-8"></script>
+    <script src="https://kit.fontawesome.com/340ae695bc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/breakpoints.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+  </head>
+  <body class="">
+    <header class="header">
+      <nav id="nav">
+        <div class="nav__link-container nav__link-container--1">
+          <span class="nav-dot nav-dot--1"></span>
+          <a class="nav__link nav__skills link--animate" href="#about-skills">skills.</a>
         </div>
-      <div id="profile-image">
-        <img src="assets/me.jpeg" alt="">
-      </div>
-    </div>
-
-
-  <section id="project-section">
-    <h1>projects.</h1>
-      <div class="swipe">
-        <i class="swipe__control swipe__control-top fas fa-arrow-left"></i><h4 class="swipe__text">swipe.</h4><i class="swipe__control-bottom fas fa-arrow-right"></i>
-      </div>
-      <div class="scroll">
-        <i class="scroll__control scroll__control-top fas fa-arrow-up"></i><h4 class="scroll__text">scroll.</h4><i class="scroll__control-bottom fas fa-arrow-down"></i>
-      </div>
-    <div class="work">
-      <div class="project slug">
-        <div class="project-info">
-          <div class="project-title">
-            <h2>Slug</h2>
+        <div class="nav__link-container nav__link-container--2">
+          <span class="nav-dot nav-dot--2"></span>
+          <a class="nav__link nav__work link--animate" href="#work">work.</a>
+        </div>
+        <div class="nav__link-container nav__link-container--3">
+          <span class="nav-dot nav-dot--3"></span>
+          <a class="nav__link nav__projects link--animate" href="#project-section">projects.</a>
+        </div>
+        <div class="nav__link-container nav__link-container--4">
+          <a class="nav__link nav__contact link--animate" href="#contact">contact.</a>
+        </div>
+      </nav>
+    </header>
+    <div class="scroll-container">
+      <section class="profile scroll-section" id="profile">
+        <div class="profile-container">
+          <div class="profile-message">
+            <h1>Hello, I'm Jordan Trickett</h1>
+            <h3>full stack developer and graphic designer.</h3>
           </div>
-          <div class="project-subheading">
-            <h4>A news aggregation platform.</h4>
+          <div class="profile-image">
+            <img src="assets/me.jpeg" alt="" />
           </div>
-          <div class="project-content">
-              <ul>
-                <li>
-                  Full-stack web application, delivering news from 4 sources, each with multiple categories. 1 third party API, 2 RSS feeds and 1 requiring web-scraping.
-                </li>
-                <li>
-                  All served to the front-end via a RESTful API, based on outlet endpoints and user preferences stored in the DB.
-                </li>
-                <li>
-                  At the beginning I focused on the complexity of how to deliver JSON from the sources consistently. Using Insomnia and the node debugger to refine the data parsing.
-                </li>
-                <li>
-                  I then wire-framed the front-end, developed the components and functions to render the AJAX responses. Focusing on keeping the code DRY and state controlled in the top level component.
-                </li>
-              </ul>
+        </div>
+      </section>
+
+      <section class="work scroll-section section-padding" id="work">
+        <h1 class="title-margin">work.</h1>
+        <div class="work-container">
+          <div class="work__section work__section-bluedog indent">
+            <div class="work-display">
+              <div class="work-info__img"><img src="assets/lucid-logo.png" alt="" class="img-contain" /></div>
+              <div class="work__main-img"><img class="img-contain" src="assets/lucid.png" alt="" /></div>
+              <div class="work-info__heading">
+                <div class="work-info__details">
+                  <h2 class="job-title">Midweight Developer</h2>
+                  <h3 class="job-dates">May 2021 - Present</h3>
+                  <h3 class="job-company">Lucid Group</h3>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="project-display">
-          <div class="project-technology">
-            <h4 class="heading">Technology.</h4>
-              <i class="devicon-react-original"></i>
-              <i class="devicon-nodejs-plain"></i>
-              <i class="devicon-mongodb-plain-wordmark"></i>
-              <i class="devicon-express-original"></i>
-              <i class="devicon-css3-plain-wordmark"></i>
-              <i class="devicon-illustrator-plain"></i>
+            <div class="work-info">
+              <div class="work-info__body">
+                <h4>stack.</h4>
+                <p class="stack">
+                  Vue.js, React.js, Node.js, Vanilla Js, HTML5, SCSS, Bootstrap, PHP, Laravel, Drupal, Wordpress, MySQL, AWS,
+                  Git and Docker
+                </p>
+                <h4>about.</h4>
+                <p>
+                  As the digital and creative arm of Lucid Group at Bluedog the goal is to harness the power of technology to
+                  create more engaging content for the many areas of medical communications including; responsive website
+                  design, CMS development, mobile / tablet applications, gamification and VR & AR.
+                </p>
+              </div>
             </div>
-          <div class="project-img">
-              <a href="https://jaytees.github.io/frontend-slug" target="_blank"><img src="assets/slug.png" alt=""></a>
           </div>
-          <div class="links">
-            <a href="https://jaytees.github.io/frontend-slug" target="_blank"><i class="devicon-chrome-plain"></i>Live Link</a>
-            <a href="https://github.com/jaytees/frontend-slug" target="_blank"> <i class="devicon-github-plain"></i> READ ME</a>
-          </div>
-        </div>
-      </div>
-      <div class="project stalk">
-        <div class="project-info">
-          <div class="project-title">
-            <h2>Stalk</h2>
-          </div>
-          <div class="project-subheading">
-            <h4>Plant care scheduler and social media platform.</h4>
-          </div>
-          <div class="project-content">
-              <ul>
-                <li>
-                  I loved the dynamic of group work on this project. We first decided the MVP requirements of our app, wire-framed the UI with the help of some UX students and developed the SQL DB associations collaboratively.
-                </li>
-                <li>
-                  We then split the workflow into deliverables tracked using Trello.
-                </li>
-                <li>
-                  I first took responsibility for the user authentication on the back and front-end, challenging myself to build this without a library.
-                </li>
-                <li>
-                  We then pair-programmed some of the harder functionality, my team developed the rendering of real-time data for last watered.
-                </li>
-                <li>
-                  Once this was done I focused on the UI, styling and integrating the components and building interactivity.
+          <div class="work__section work__section-mccglc indent">
+            <div class="work-display">
+              <div class="work-info__img"><img src="assets/mccglc-logo.png" alt="" class="img-contain" /></div>
+              <div class="work__main-img"><img class="img-contain" src="assets/spacein.png" alt="" /></div>
+              <div class="work-info__heading">
+                <div class="work-info__details">
+                  <h2 class="job-title">Junior Developer</h2>
+                  <h3 class="job-dates">June 2020 - May 2021</h3>
+                  <h3 class="job-company">MCCGLC</h3>
+                </div>
+              </div>
+            </div>
 
-                </li>
-              </ul>
+            <div class="work-info">
+              <div class="work-info__body">
+                <h4>stack.</h4>
+                <p class="stack">
+                  Vue.js, Javascript, CSS, SCSS, Node.js, Firebase, HTML, Heroku, Git, Jira & Confluence, AGILE Methodology.
+                </p>
+                <h4>about.</h4>
+                <p>
+                  Working within the Creative Technology Team on the development of web applications from concept to public
+                  release.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="project-display">
-          <div class="project-technology">
-            <h4 class="heading">Technology.</h4>
-              <i class="devicon-react-original"></i>
-              <i class="devicon-ruby-plain"></i>
-              <i class="devicon-rails-plain-wordmark"></i>
-              <i class="devicon-postgresql-plain-wordmark"></i>
-              <i class="devicon-css3-plain-wordmark"></i>
-          </div>
-          <div class="project-img">
-              <a href="https://jaytees.github.io/frontend-stalk" target="_blank"><img src="assets/stalk.png" alt=""></a>
-          </div>
-          <div class="links">
-            <a href="https://jaytees.github.io/frontend-stalk" target="_blank"><i class="devicon-chrome-plain"></i>Live Link</a>
-            <a href="https://github.com/jaytees/frontend-stalk" target="_blank"> <i class="devicon-github-plain"></i> READ ME</a>
-          </div>
+      <section class="about scroll-section section-padding" id="about-skills">
+        <div class="about__me">
+          <h1 class="title-margin">about.</h1>
+          <p class="indent">
+            Determined full-stack developer, with 6 years of marketing experience, delivering projects for companies like
+            UBER, Amazon and Adidas. <br /><br />
+            So why the move? I love the process of bringing ideas to life and I'm excited about the opportunity to apply the
+            same vision and creative thinking skills to the many layers of modern web app development. <br /><br />
+            I value collaboration highly and coming from an agency background I am used to working in cross-functional teams
+            that are client-facing. I also know well, that problems do occur and my ability to adapt and troubleshoot on the
+            go has always been a valuable skill. <br /><br />
+            You wouldn't be wrong in thinking that I lean towards front-end development. But don't box me in just yet. I'm
+            ambitious and want to learn as much as I can. <br /><br />
+          </p>
         </div>
-
-    </div>
-    <div class="project one">
-      <div class="project-info">
-        <div class="project-title">
-          <h2>One</h2>
-        </div>
-        <div class="project-subheading">
-          <h4>Aimed to organise the outreach for the Australian fires.</h4>
-        </div>
-        <div class="project-content">
-          <ul>
-            <li>
-              Application where users can request or donate items based on collections created by other users.
-            </li>
-            <li>
-              I used Ruby on Rails for the MVC architecture. Beginning with the Models, I used a line item concept to achieve the duality necessary for the user and product tables.
-            </li>
-            <li>
-              Once thoroughly tested in the Rails console, I wire-framed the front-end and focussed on the Controllers and Views.
-            </li>
-            <li>
-              Using partial form rendering to achieve the functionality I was after in the Views and focusing on the CRUD operations for the controllers.
-            </li>
-            <li>
-              Finally, I integrated the Google Maps Api to display local collections or deliveries based on user location.
-            </li>
-          </ul>
-          </div>
-      </div>
-      <div class="project-display">
-        <div class="project-technology">
-          <h4 class="heading">Technology.</h4>
-            <i class="devicon-ruby-plain"></i>
-            <i class="devicon-rails-plain-wordmark"></i>
-            <i class="devicon-postgresql-plain-wordmark"></i>
-            <i class="devicon-jquery-plain-wordmark"></i>
-            <i class="devicon-css3-plain-wordmark"></i>
-            <i class="devicon-illustrator-plain"></i>
-        </div>
-        <div class="project-img">
-            <a href="https://jaytees-one.herokuapp.com" target="_blank"><img src="assets/screenshot-1.png" alt=""></a>
-        </div>
-        <div class="links">
-          <a href="https://jaytees-one.herokuapp.com" target="_blank"><i class="devicon-chrome-plain"></i>Live Link</a>
-          <a href="https://github.com/jaytees/project-one" target="_blank"> <i class="devicon-github-plain"></i> READ ME</a>
-        </div>
-      </div>
-    </div>
-    <div class="project ttt">
-      <div class="project-info">
-        <div class="project-title">
-          <h2>Tic Tac Toe</h2>
-        </div>
-        <div class="project-subheading">
-          <h4>Classic game, with an unbeatable, semi intelligent AI.</h4>
-        </div>
-        <div class="project-content">
-            <ul>
-              <li>My first project, Such an exciting and fulfilling experience. Every feature I got working came with a huge sense of achievement.</li>
-              <li>Most proud of integrating a semi-intelligent AI. That will first look to block any possible user wins and then look for a win.</li>
-              <li>Also, the separation of concern between UI and game logic.</li>
-            </ul>
-          </div>
-      </div>
-      <div class="project-display">
-        <div class="project-technology">
-          <h4 class="heading">Technology.</h4>
+        <div class="about__skills">
+          <h1>skills.</h1>
+          <div class="about__skills-icons">
             <i class="devicon-html5-plain-wordmark"></i>
             <i class="devicon-css3-plain-wordmark"></i>
             <i class="devicon-javascript-plain"></i>
+            <i class="devicon-react-original-wordmark"></i>
+            <i class="devicon-vuejs-plain-wordmark"></i>
+            <i class="devicon-webpack-plain"></i>
             <i class="devicon-jquery-plain-wordmark"></i>
+            <i class="devicon-nodejs-plain"></i>
+            <i class="devicon-php-plain"></i>
+            <i class="devicon-rails-plain-wordmark"></i>
+            <i class="devicon-ruby-plain-wordmark"></i>
+            <i class="devicon-mongodb-plain-wordmark"></i>
+            <i class="devicon-express-original"></i>
+            <i class="devicon-postgresql-plain-wordmark"></i>
+            <i class="devicon-heroku-plain-wordmark"></i>
+            <i class="devicon-github-original-wordmark"></i>
+            <i class="devicon-wordpress-plain-wordmark"></i>
+            <i class="fab fa-shopify"></i>
+            <i class="devicon-threejs-original-wordmark"></i>
+            <i class="devicon-illustrator-plain"></i>
+            <i class="devicon-photoshop-plain"></i>
+          </div>
         </div>
-        <div class="project-img">
-            <a href="https://jaytees.github.io/tic-tac-toe" target="_blank"><img src="assets/ttt.png" alt=""></a>
+      </section>
+
+      <section class="projects scroll-section section-padding" id="project-section">
+        <h1 class="projects__title title-margin">projects @ GA.</h1>
+        <div class="projects__container">
+          <div class="project slug">
+            <div class="project__display">
+              <div class="project-img">
+                <a href="https://jaytees.github.io/frontend-slug" target="_blank"
+                  ><img class="img-cover" src="assets/slug.png" alt=""
+                /></a>
+              </div>
+              <div class="project-links">
+                <a href="https://jaytees.github.io/frontend-slug" target="_blank"
+                  ><i class="devicon-chrome-plain"></i>Live Link</a
+                >
+                <a href="https://github.com/jaytees/frontend-slug" target="_blank">
+                  <i class="devicon-github-plain"></i> READ ME</a
+                >
+              </div>
+            </div>
+            <div class="project__info">
+              <div class="project-title">
+                <h2>Slug</h2>
+              </div>
+              <div class="project-subheading">
+                <h3 class="subheading" class="subheading">A news aggregation platform.</h3>
+              </div>
+              <div class="project-technology">
+                <h3 class="subheading">Technology.</h3>
+                <i class="devicon-react-original"></i>
+                <i class="devicon-nodejs-plain"></i>
+                <i class="devicon-mongodb-plain-wordmark"></i>
+                <i class="devicon-express-original"></i>
+                <i class="devicon-css3-plain-wordmark"></i>
+                <i class="devicon-illustrator-plain"></i>
+              </div>
+              <div class="project-content">
+                <ul>
+                  <li>
+                    Full-stack web application, delivering news from 4 sources, each with multiple categories. 1 third party
+                    API, 2 RSS feeds and 1 requiring web-scraping.
+                  </li>
+                  <li>
+                    All served to the front-end via a RESTful API, based on outlet endpoints and user preferences stored in
+                    the DB.
+                  </li>
+                  <li>
+                    At the beginning I focused on the complexity of how to deliver JSON from the sources consistently. Using
+                    Insomnia and the node debugger to refine the data parsing.
+                  </li>
+                  <li>
+                    I then wire-framed the front-end, developed the components and functions to render the AJAX responses.
+                    Focusing on keeping the code DRY and state controlled in the top level component.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="project stalk">
+            <div class="project__display">
+              <div class="project-img">
+                <a href="https://jaytees.github.io/frontend-stalk" target="_blank"
+                  ><img class="img-cover" src="assets/stalk.png" alt=""
+                /></a>
+              </div>
+              <div class="project-links">
+                <a href="https://jaytees.github.io/frontend-stalk" target="_blank"
+                  ><i class="devicon-chrome-plain"></i>Live Link</a
+                >
+                <a href="https://github.com/jaytees/frontend-stalk" target="_blank">
+                  <i class="devicon-github-plain"></i> READ ME</a
+                >
+              </div>
+            </div>
+            <div class="project__info">
+              <div class="project-title">
+                <h2>Stalk</h2>
+              </div>
+              <div class="project-subheading">
+                <h3 class="subheading">Plant care scheduler and social media platform.</h3>
+              </div>
+              <div class="project-technology">
+                <h3 class="subheading">Technology.</h3>
+                <i class="devicon-react-original"></i>
+                <i class="devicon-ruby-plain"></i>
+                <i class="devicon-rails-plain-wordmark"></i>
+                <i class="devicon-postgresql-plain-wordmark"></i>
+                <i class="devicon-css3-plain-wordmark"></i>
+              </div>
+              <div class="project-content">
+                <ul>
+                  <li>
+                    I loved the dynamic of group work on this project. We first decided the MVP requirements of our app,
+                    wire-framed the UI with the help of some UX students and developed the SQL DB associations
+                    collaboratively.
+                  </li>
+                  <li>We then split the workflow into deliverables tracked using Trello.</li>
+                  <li>
+                    I first took responsibility for the user authentication on the back and front-end, challenging myself to
+                    build this without a library.
+                  </li>
+                  <li>
+                    We then pair-programmed some of the harder functionality, my team developed the rendering of real-time
+                    data for last watered.
+                  </li>
+                  <li>
+                    Once this was done I focused on the UI, styling and integrating the components and building
+                    interactivity.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="project one">
+            <div class="project__display">
+              <div class="project-img">
+                <a href="https://jaytees-one.herokuapp.com" target="_blank"
+                  ><img class="img-cover" src="assets/one.png" alt=""
+                /></a>
+              </div>
+              <div class="project-links">
+                <a href="https://jaytees-one.herokuapp.com" target="_blank"><i class="devicon-chrome-plain"></i>Live Link</a>
+                <a href="https://github.com/jaytees/project-one" target="_blank">
+                  <i class="devicon-github-plain"></i> READ ME</a
+                >
+              </div>
+            </div>
+            <div class="project__info">
+              <div class="project-title">
+                <h2>One</h2>
+              </div>
+              <div class="project-subheading">
+                <h3 class="subheading">Aimed to organise the outreach for the Australian fires.</h3>
+              </div>
+              <div class="project-technology">
+                <h3 class="subheading">Technology.</h3>
+                <i class="devicon-ruby-plain"></i>
+                <i class="devicon-rails-plain-wordmark"></i>
+                <i class="devicon-postgresql-plain-wordmark"></i>
+                <i class="devicon-jquery-plain-wordmark"></i>
+                <i class="devicon-css3-plain-wordmark"></i>
+                <i class="devicon-illustrator-plain"></i>
+              </div>
+              <div class="project-content">
+                <ul>
+                  <li>Application where users can request or donate items based on collections created by other users.</li>
+                  <li>
+                    I used Ruby on Rails for the MVC architecture. Beginning with the Models, I used a line item concept to
+                    achieve the duality necessary for the user and product tables.
+                  </li>
+                  <li>
+                    Once thoroughly tested in the Rails console, I wire-framed the front-end and focussed on the Controllers
+                    and Views.
+                  </li>
+                  <li>
+                    Using partial form rendering to achieve the functionality I was after in the Views and focusing on the
+                    CRUD operations for the controllers.
+                  </li>
+                  <li>
+                    Finally, I integrated the Google Maps Api to display local collections or deliveries based on user
+                    location.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="project ttt">
+            <div class="project__display">
+              <div class="project-img">
+                <a href="https://jaytees.github.io/tic-tac-toe" target="_blank"
+                  ><img src="assets/ttt.png" class="img-cover" alt=""
+                /></a>
+              </div>
+              <div class="project-links">
+                <a href="https://jaytees.github.io/tic-tac-toe" target="_blank"
+                  ><i class="devicon-chrome-plain"></i>Live Link</a
+                >
+                <a href="https://github.com/jaytees/tic-tac-toe" target="_blank">
+                  <i class="devicon-github-plain"></i> READ ME</a
+                >
+              </div>
+            </div>
+            <div class="project__info">
+              <div class="project-title">
+                <h2>Tic Tac Toe</h2>
+              </div>
+              <div class="project-subheading">
+                <h3 class="subheading">Classic game, with an unbeatable, semi intelligent AI.</h3>
+              </div>
+              <div class="project-technology">
+                <h3 class="subheading">Technology.</h3>
+                <i class="devicon-html5-plain-wordmark"></i>
+                <i class="devicon-css3-plain-wordmark"></i>
+                <i class="devicon-javascript-plain"></i>
+                <i class="devicon-jquery-plain-wordmark"></i>
+              </div>
+              <div class="project-content">
+                <ul>
+                  <li>
+                    My first project, Such an exciting and fulfilling experience. Every feature I got working came with a
+                    huge sense of achievement.
+                  </li>
+                  <li>
+                    Most proud of integrating a semi-intelligent AI. That will first look to block any possible user wins and
+                    then look for a win.
+                  </li>
+                  <li>Also, the separation of concern between UI and game logic.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="links">
-          <a href="https://jaytees.github.io/tic-tac-toe" target="_blank"><i class="devicon-chrome-plain"></i>Live Link</a>
-          <a href="https://github.com/jaytees/tic-tac-toe" target="_blank"> <i class="devicon-github-plain"></i> READ ME</a>
+
+        <div class="projects__controls">
+          <div class="swipe">
+            <h4 class="swipe__text bounce-swipe">swipe.</h4>
+          </div>
+          <div class="scroll">
+            <h4 class="scroll__text bounce">scroll.</h4>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <section class="contact scroll-section section-padding" id="contact">
+        <h1 class="title-margin">contact.</h1>
+        <ul class="fa-ul indent">
+          <li>
+            <i class="fas fa-li fa-paper-plane"></i>
+            <a href="mailto:jordan1trickett@gmail.com"><h3 class="link--animate">Lets talk</h3></a>
+          </li>
+          <li>
+            <i class="fab fa-li fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/jordantrickett/" target="_blank"
+              ><h3 class="link--animate">Get to know me</h3></a
+            >
+          </li>
+          <li>
+            <i class="fab fa-li fa-github"></i>
+            <a href="https://github.com/jaytees" target="_blank"><h3 class="link--animate">View my code</h3></a>
+          </li>
+          <li>
+            <i class="fab fa-li fa-medium"></i>
+            <a href="https://medium.com/@jordan1trickett" target="_blank"><h3 class="link--animate">Read my articles</h3></a>
+          </li>
+        </ul>
+      </section>
     </div>
-    <div class="fakeblock"></div>
-  </section>
-
-  <section id="about-skills">
-
-    <div id="about">
-      <h1>about.</h1>
-      <p>Determined full-stack developer, with 6 years of marketing experience, delivering projects for companies like UBER, Amazon and Adidas. <br><br>
-
-  So why the move? I love the process of bringing ideas to life and I’m excited about the opportunity to apply the same vision and creative thinking skills to the many layers of modern web app development. <br><br>
-
-  I value collaboration highly and coming from an agency background I am used to working in cross-functional teams that are client-facing. I also know well, that problems do occur and my ability to adapt and troubleshoot on the go has always been a valuable skill. <br><br>
-
-   You wouldn’t be wrong in thinking that I lean towards front-end development. But don’t box me in just yet. I’m ambitious and want to learn as much as I can. <br><br>
-  </p>
-    </div>
-
-    <div id="skills">
-      <h1>skills.</h1>
-      <i class="devicon-html5-plain-wordmark"></i>
-      <i class="devicon-css3-plain-wordmark"></i>
-      <i class="devicon-javascript-plain"></i>
-      <i class="devicon-react-original-wordmark"></i>
-      <i class="devicon-vuejs-plain-wordmark"></i>
-      <i class="devicon-webpack-plain"></i>
-      <i class="devicon-jquery-plain-wordmark"></i>
-      <i class="devicon-nodejs-plain"></i>
-      <i class="devicon-rails-plain-wordmark"></i>
-      <i class="devicon-ruby-plain-wordmark"></i>
-      <i class="devicon-mongodb-plain-wordmark"></i>
-      <i class="devicon-express-original"></i>
-      <i class="devicon-postgresql-plain-wordmark"></i>
-      <i class="devicon-heroku-plain-wordmark"></i>
-      <i class="devicon-github-plain-wordmark"></i>
-      <i class="devicon-wordpress-plain-wordmark"></i>
-      <i class="fab fa-shopify"></i>
-      <i class="devicon-illustrator-plain"></i>
-      <i class="devicon-photoshop-plain"></i>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h1>contact.</h1>
-      <ul  class="fa-ul">
-        <li>
-          <i class="fas fa-li fa-paper-plane"></i>
-          <a href="mailto:jordan1trickett@gmail.com"><h3 class="link--animate">Lets talk.</h3></a>
-        </li>
-        <li>
-          <i class="fab fa-li fa-linkedin"></i>
-          <a href="https://www.linkedin.com/in/jordantrickett/" target="_blank"><h3 class="link--animate">Get to know me.</h3></a>
-        </li>
-        <li>
-          <i class="fab fa-li fa-github"></i>
-          <a href="https://github.com/jaytees" target="_blank"><h3 class="link--animate">View my code.</h3></a>
-        </li>
-        <li>
-          <i class="fab fa-li fa-medium"></i>
-          <a href="https://medium.com/@jordan1trickett" target="_blank"><h3 class="link--animate">Read my articles.</h3></a>
-        </li>
-      </ul>
-  </section>
-
-
-
-</body>
+  </body>
 </html>

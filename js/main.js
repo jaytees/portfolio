@@ -1,60 +1,55 @@
-//project animation
-let scrollDiv;
-let projectDiv;
-let isScrolling = null;
+console.log('hello cruel world');
+let navContainer = false;
+let main = false;
+let header = false;
+// const mq = window.matchMedia('(max-width: 767px)');
 
-const mq = window.matchMedia("(max-width: 600px)");
+// const navToggler = () => {
+//   const scrollY = main.scrollTop;
+//   // if window < 600
+//   if (scrollY >= window.innerHeight) {
+//     // hide nav on scroll
+//     header.classList.add('nav--hide');
+//   }
+//   if (scrollY <= window.innerHeight / 2) {
+//     // hide nav on scroll
+//     header.classList.remove('nav--hide');
+//   }
+// };
 
-window.onload = function() {
-  //project scroll
-  scrollDiv = document.querySelector(".work");
-  scrollDiv.addEventListener("wheel", onScroll, false);
-  projectDiv = document.querySelectorAll(".project");
-
+window.onload = function () {
   //nav scroll
-  const navContainer = document.getElementById("nav");
+  header = document.querySelector('.header');
+  navContainer = document.getElementById('nav');
   // Get all buttons with class="btn" inside the container
-  const navLinks = navContainer.getElementsByClassName("nav__link");
+  const navLinks = navContainer.getElementsByClassName('nav__link');
   // Loop through the links and add the active class to the current/clicked button
   for (let i = 0; i < navLinks.length; i++) {
-    navLinks[i].addEventListener("click", function() {
-      let current = document.getElementsByClassName("nav__link--active");
+    navLinks[i].addEventListener('click', function () {
+      let current = document.getElementsByClassName('nav__link--active');
 
       // If there's no active class
       if (current.length > 0) {
-        current[0].className = current[0].className.replace(
-          " nav__link--active",
-          ""
-        );
+        current[0].className = current[0].className.replace(' nav__link--active', '');
       }
 
       // Add the active class to the current/clicked button
-      this.className += " nav__link--active";
+      this.className += ' nav__link--active';
     });
   } //for nav active
-};
 
-const onScroll = e => {
-  //if window > 600px
-  if (!mq.matches) {
-    if (event.deltaX > 0) {
-      projectDiv.forEach(item => {
-        item.classList.remove("animate-over");
-        item.classList.add("animate-right");
-      });
-    } else {
-      projectDiv.forEach(item => {
-        item.classList.remove("animate-over");
-        item.classList.add("animate-left");
-      });
-    }
+  // main = document.querySelector('.scroll-container');
+  // if (main.scrollTop >= window.innerHeight) {
+  //   // hide nav on scroll
+  //   header.classList.add('nav--hide');
+  // }
+  // main.onscroll = function () {
+  //   navToggler();
+  // };
 
-    clearTimeout(isScrolling);
-    isScrolling = setTimeout(function() {
-      projectDiv.forEach(item => {
-        item.classList.add("animate-over");
-        item.classList.remove("animate-right", "animate-left");
-      });
-    }, 200);
-  }
+  // header.addEventListener('click', () => {
+  //   if (header.className.split(' ').includes('nav--hide')) {
+  //     header.classList.remove('nav--hide');
+  //   }
+  // });
 };

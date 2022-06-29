@@ -1,0 +1,281 @@
+/* mobile */
+@media (max-width: 768px) {
+    header {
+            height: 125px;
+    }
+header:hover {
+        height: 100vh;
+        background-color: white;
+        border-right: solid 4px #ff5c5c;
+        box-shadow: 3px -2px 5px 0px rgba(0, 0, 0, 0.46);
+        -webkit-box-shadow: 3px -2px 5px 0px rgba(0, 0, 0, 0.46);
+        -moz-box-shadow: 3px -2px 5px 0px rgba(0, 0, 0, 0.46);
+    }
+}
+
+@media (min-width: 455px) {
+    .projects__title {
+        max-width: 75%;
+    }
+}
+
+@media (min-width: 576px) {
+    .profile-container {
+        width: 379px;
+    }
+    /* .profile-container {
+        width: 379px;
+    }
+
+    .profile-message {
+        width: 22rem;
+    }
+
+    .profile-message h1 {
+        font-size: 2.8rem;
+    }
+
+    .profile-message h3 {
+        font-size: 2rem;
+        margin-top: 20rem;
+    }
+
+    .profile-image {
+        bottom: 3rem;
+    }
+
+    .profile-image img {
+        width: 19rem;
+    } */
+
+    .work__section {
+        width: 400px;
+    }
+    .work-display {
+        height: 305px;
+    }
+    .work__section-mccglc {
+        align-self: flex-end;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+    :root {
+        --px: 3rem;
+        --py: 2rem;
+    }
+                header {
+                    height: 100vh;
+                }
+    .indent {
+        margin-left: 1rem;
+    }
+
+    .profile-container {
+      width: 615px;
+      height: 400px;
+    }
+
+    .profile-message {
+      width: 396px;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+    }
+
+    .profile-message h1 {
+      margin-bottom: 1rem;
+    }
+
+    .profile-message h3 {
+      font-size: 2rem;
+      margin-top: 3rem;
+    }
+
+    .profile-image img {
+      width: 25rem;
+    }
+
+    .about__me p {
+        font-size: 18px;
+    }
+
+    .about__skills i {
+      font-size: 3.5rem;
+    }
+
+    .fa-shopify {
+      width: 56px;
+    }
+
+    .work__section {
+        width: 476px;
+    }
+
+    .work-display {
+        height: 345px;
+    }
+
+    .work-info__img {
+        height: 50px;
+        width: 50px;
+    }
+
+
+
+    .project-content ul li {
+        font-size: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .scroll-container {
+        scroll-snap-type: y mandatory;
+    }
+    .profile-container {
+      width: 844px;
+    }
+
+    .profile-message {
+      width: 594px;
+    }
+
+    h1 {
+      font-size: 5rem;
+    }
+
+    .profile-message h1 {
+      font-size: 5rem;
+      margin-bottom: 1rem;
+    }
+
+    .profile-message h3 {
+      font-size: 3rem;
+      margin-top: 3rem;
+    }
+
+    .profile-image {
+      bottom: 0;
+    }
+
+    .work__section {
+        width: 576px;
+    }
+
+    .work-display {
+        height: 410px;
+    }
+
+    .work-info__img {
+        height: 65px;
+        width: 65px;
+    }
+
+    .job-title {
+        font-size: 36px;
+    }
+
+    .job-company,
+    .job-dates {
+        font-size: 18px;
+    }
+
+    .work-info__body h4 {
+        font-style: 22px;
+    }
+
+
+
+    .projects__title {
+        max-width: unset;
+    }
+    /* .projects__container {
+        width: 80vw;
+    } */
+    .project-title h2 {
+        font-size: 3rem;
+    }
+    .subheading {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-margin {
+      padding: 4.5rem 9rem;
+    }
+
+    .work-container {
+        flex-direction: row;
+    }
+
+    .work-display {
+        height: 400px;
+    }
+
+    .work__section-mccglc {
+        align-self: flex-start;
+    }
+
+    .about {
+        flex-direction: row;
+    }
+
+    .about.scroll-section {
+      height: 100vh;
+    }
+
+    .about__me,
+    .about__skills {
+      width: 50%;
+    }
+
+    .about__me {
+      padding-right: 3rem;
+    }
+
+    .about__skills i {
+      font-size: 4.5rem;
+    }
+
+    .projects__container {
+        height: 90%;
+        width: unset;
+        margin: 0 1rem;
+        flex-direction: row;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+    }
+
+    .project {
+        min-width: 95%;
+        width: 95%;
+        max-width: 95%;
+        flex-direction: row;
+    }
+
+    .project__info {
+        width: 40%
+    }
+    .project__display {
+        width: 60%;
+    }
+
+    .scroll {
+        display: none;
+    }
+
+    .swipe {
+        display: block;
+    }
+}
+
+@media (min-width: 1400px) {
+    .work-display {
+        height: 410px;
+    }
+}
