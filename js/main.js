@@ -35,6 +35,8 @@ window.onload = function () {
 
       // Add the active class to the current/clicked button
       this.className += ' nav__link--active';
+
+      $('body').toggleClass('nav-active');
     });
   } //for nav active
 
@@ -52,4 +54,47 @@ window.onload = function () {
   //     header.classList.remove('nav--hide');
   //   }
   // });
+
+  // idea 1
+  $('.corner').click(() => {
+    $('body').toggleClass('nav-active');
+    $('.corner-blob').toggle();
+    $('.corner-circle').toggle();
+  });
+  // idea 2
+  // $('.corner').click(() => {
+  //   $('body').toggleClass('nav-active');
+  // });
+
+  var randomness = 200;
+  var threshold = 100;
+  var anim_duration = 700; //1000 = 1s
+
+  function rgb2hex(rgb) {
+    rgb = rgb.match(/^rgba?[\s+]?\([\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?/i);
+    return rgb && rgb.length === 4
+      ? '#' +
+          ('0' + parseInt(rgb[1], 10).toString(16)).slice(-2) +
+          ('0' + parseInt(rgb[2], 10).toString(16)).slice(-2) +
+          ('0' + parseInt(rgb[3], 10).toString(16)).slice(-2)
+      : '';
+  }
+
+  animate = function () {
+    var randomNumRed = Math.round(Math.random() * 25) + 25;
+    var randomNumGreen = Math.round(Math.random() * 25) + 125;
+
+    $('.corner-blob').animate(
+      {
+        borderTopLeftRadius: String(Math.round(Math.random() * randomness + threshold) + 'px'),
+        borderTopRightRadius: String(Math.round(Math.random() * randomness + threshold) + 'px'),
+        borderBottomLeftRadius: String(Math.round(Math.random() * randomness + threshold) + 'px'),
+        borderBottomRightRadius: String(Math.round(Math.random() * randomness + threshold) + 'px'),
+        backgroundColor: rgb2hex('rgba(' + randomNumRed + ',' + randomNumGreen + ', 215)')
+      },
+      anim_duration,
+      animate
+    );
+  };
+  animate();
 };

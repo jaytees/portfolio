@@ -1,16 +1,17 @@
 /* mobile */
 @media (max-width: 768px) {
-    header {
-            height: 125px;
+    /* header {
+        height: 125px;
     }
-header:hover {
+
+    header:hover {
         height: 100vh;
         background-color: white;
         border-right: solid 4px #ff5c5c;
         box-shadow: 3px -2px 5px 0px rgba(0, 0, 0, 0.46);
         -webkit-box-shadow: 3px -2px 5px 0px rgba(0, 0, 0, 0.46);
         -moz-box-shadow: 3px -2px 5px 0px rgba(0, 0, 0, 0.46);
-    }
+    } */
 }
 
 @media (min-width: 455px) {
@@ -23,6 +24,7 @@ header:hover {
     .profile-container {
         width: 379px;
     }
+
     /* .profile-container {
         width: 379px;
     }
@@ -51,12 +53,14 @@ header:hover {
     .work__section {
         width: 400px;
     }
+
     .work-display {
         height: 305px;
     }
-    .work__section-mccglc {
+
+    /* .work__section-mccglc {
         align-self: flex-end;
-    }
+    } */
 
 }
 
@@ -66,37 +70,39 @@ header:hover {
         --px: 3rem;
         --py: 2rem;
     }
-                header {
-                    height: 100vh;
-                }
+
+    header {
+        height: 100vh;
+    }
+
     .indent {
         margin-left: 1rem;
     }
 
     .profile-container {
-      width: 615px;
-      height: 400px;
+        width: 615px;
+        height: 400px;
     }
 
     .profile-message {
-      width: 396px;
+        width: 396px;
     }
 
     h1 {
-      font-size: 3.2rem;
+        font-size: 3.2rem;
     }
 
     .profile-message h1 {
-      margin-bottom: 1rem;
+        margin-bottom: 1rem;
     }
 
     .profile-message h3 {
-      font-size: 2rem;
-      margin-top: 3rem;
+        font-size: 2rem;
+        margin-top: 3rem;
     }
 
     .profile-image img {
-      width: 25rem;
+        width: 25rem;
     }
 
     .about__me p {
@@ -104,11 +110,11 @@ header:hover {
     }
 
     .about__skills i {
-      font-size: 3.5rem;
+        font-size: 3.5rem;
     }
 
     .fa-shopify {
-      width: 56px;
+        width: 56px;
     }
 
     .work__section {
@@ -136,30 +142,31 @@ header:hover {
     .scroll-container {
         scroll-snap-type: y mandatory;
     }
+
     .profile-container {
-      width: 844px;
+        width: 844px;
     }
 
     .profile-message {
-      width: 594px;
+        width: 594px;
     }
 
     h1 {
-      font-size: 5rem;
+        font-size: 5rem;
     }
 
     .profile-message h1 {
-      font-size: 5rem;
-      margin-bottom: 1rem;
+        font-size: 5rem;
+        margin-bottom: 1rem;
     }
 
     .profile-message h3 {
-      font-size: 3rem;
-      margin-top: 3rem;
+        font-size: 3rem;
+        margin-top: 3rem;
     }
 
     .profile-image {
-      bottom: 0;
+        bottom: 0;
     }
 
     .work__section {
@@ -193,12 +200,14 @@ header:hover {
     .projects__title {
         max-width: unset;
     }
+
     /* .projects__container {
         width: 80vw;
     } */
     .project-title h2 {
         font-size: 3rem;
     }
+
     .subheading {
         font-size: 1.2rem;
     }
@@ -206,7 +215,7 @@ header:hover {
 
 @media (min-width: 1200px) {
     .section-margin {
-      padding: 4.5rem 9rem;
+        padding: 4.5rem 9rem;
     }
 
     .work-container {
@@ -226,20 +235,20 @@ header:hover {
     }
 
     .about.scroll-section {
-      height: 100vh;
+        height: 100vh;
     }
 
     .about__me,
     .about__skills {
-      width: 50%;
+        width: 50%;
     }
 
     .about__me {
-      padding-right: 3rem;
+        padding-right: 3rem;
     }
 
     .about__skills i {
-      font-size: 4.5rem;
+        font-size: 4.5rem;
     }
 
     .projects__container {
@@ -261,6 +270,7 @@ header:hover {
     .project__info {
         width: 40%
     }
+
     .project__display {
         width: 60%;
     }
@@ -276,6 +286,6 @@ header:hover {
 
 @media (min-width: 1400px) {
     .work-display {
-        height: 410px;
+        height: 350px;
     }
 }

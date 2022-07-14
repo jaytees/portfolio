@@ -18,6 +18,7 @@
     <meta name="HandheldFriendly" content="true" />
 
     <title>Jordan Trickett | Porfolio</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/main.js" charset="utf-8"></script>
     <script src="https://kit.fontawesome.com/340ae695bc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/reset.css" />
@@ -30,22 +31,32 @@
   <body class="">
     <header class="header">
       <nav id="nav">
-        <div class="nav__link-container nav__link-container--1">
-          <span class="nav-dot nav-dot--1"></span>
-          <a class="nav__link nav__skills link--animate" href="#about-skills">skills.</a>
-        </div>
-        <div class="nav__link-container nav__link-container--2">
-          <span class="nav-dot nav-dot--2"></span>
-          <a class="nav__link nav__work link--animate" href="#work">work.</a>
-        </div>
-        <div class="nav__link-container nav__link-container--3">
-          <span class="nav-dot nav-dot--3"></span>
-          <a class="nav__link nav__projects link--animate" href="#project-section">projects.</a>
-        </div>
-        <div class="nav__link-container nav__link-container--4">
-          <a class="nav__link nav__contact link--animate" href="#contact">contact.</a>
-        </div>
+          <div class="nav__link-container nav__link-container--1">
+            <a class="nav__link nav__skills link--animate" href="#about-skills">skills.</a>
+          </div>
+          <div class="nav__link-container nav__link-container--2">
+            <a class="nav__link nav__work link--animate" href="#work">work.</a>
+          </div>
+          <div class="nav__link-container nav__link-container--3">
+            <a class="nav__link nav__projects link--animate" href="#project-section">projects.</a>
+          </div>
+          <div class="nav__link-container nav__link-container--4">
+            <a class="nav__link nav__contact link--animate" href="#contact">contact.</a>
+          </div>
       </nav>
+      <div class="corner">
+        <div class="corner-circle"></div>
+        <div class="corner-blob animated fadeIn">
+          <div class="blob"></div>
+        </div>
+        <div class="svg-wrapper">
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+            <path class="cls-2" d="M75.79,40c0-19.77-16.02-35.79-35.79-35.79S4.21,20.23,4.21,40s16.02,35.79,35.79,35.79,35.79-16.02,35.79-35.79Z"/>
+            <path class="cls-1" d="M45.7,55.25c.82,.82,.82,2.16,0,2.98-.82,.82-2.16,.82-2.98,0l-16.84-16.84c-.82-.82-.82-2.16,0-2.98l16.84-16.84c.82-.82,2.16-.82,2.98,0s.82,2.16,0,2.98l-15.35,15.35,15.35,15.36Zm30.09-15.25c0-19.77-16.02-35.79-35.79-35.79S4.21,20.23,4.21,40s16.02,35.79,35.79,35.79,35.79-16.02,35.79-35.79Zm4.21,0c0,22.09-17.91,40-40,40S0,62.09,0,40,17.91,0,40,0s40,17.91,40,40Z"/>
+          </svg>
+        </div>
+      </div>
     </header>
     <div class="scroll-container">
       <section class="profile scroll-section" id="profile">
@@ -67,6 +78,8 @@
             <div class="work-display">
               <div class="work-info__img"><img src="assets/lucid-logo.png" alt="" class="img-contain" /></div>
               <div class="work__main-img"><img class="img-contain" src="assets/lucid.png" alt="" /></div>
+            </div>
+            <div class="work-info">
               <div class="work-info__heading">
                 <div class="work-info__details">
                   <h2 class="job-title">Midweight Developer</h2>
@@ -74,20 +87,25 @@
                   <h3 class="job-company">Lucid Group</h3>
                 </div>
               </div>
-            </div>
-            <div class="work-info">
               <div class="work-info__body">
                 <h4>stack.</h4>
                 <p class="stack">
-                  Vue.js, React.js, Node.js, Vanilla Js, HTML5, SCSS, Bootstrap, PHP, Laravel, Drupal, Wordpress, MySQL, AWS,
+                  Vue.js, React, Node.js, Vanilla Js, HTML5, SCSS, Bootstrap, PHP, Laravel, Drupal, Wordpress, MySQL, AWS,
                   Git and Docker
                 </p>
                 <h4>about.</h4>
                 <p>
-                  As the digital and creative arm of Lucid Group at Bluedog the goal is to harness the power of technology to
-                  create more engaging content for the many areas of medical communications including; responsive website
-                  design, CMS development, mobile / tablet applications, gamification and VR & AR.
+                  As the digital and creative arm of Lucid Group at Bluedog the goal is to create more engaging content for
+                  the many areas of medical communications. My most notable products here include:
                 </p>
+                <ul>
+                  <li>A touchscreen application with custom data analytics built with Electron, Vue.js and Three.js</li>
+                  <li>An accessibility focused educational website built with Nuxt.js</li>
+                  <li>
+                    the complete rebuild of the company site with a fully functional CMS using PHP, Timber, Twig and
+                    Wordpress
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -95,6 +113,8 @@
             <div class="work-display">
               <div class="work-info__img"><img src="assets/mccglc-logo.png" alt="" class="img-contain" /></div>
               <div class="work__main-img"><img class="img-contain" src="assets/spacein.png" alt="" /></div>
+            </div>
+            <div class="work-info">
               <div class="work-info__heading">
                 <div class="work-info__details">
                   <h2 class="job-title">Junior Developer</h2>
@@ -102,19 +122,22 @@
                   <h3 class="job-company">MCCGLC</h3>
                 </div>
               </div>
-            </div>
-
-            <div class="work-info">
               <div class="work-info__body">
                 <h4>stack.</h4>
                 <p class="stack">
-                  Vue.js, Javascript, CSS, SCSS, Node.js, Firebase, HTML, Heroku, Git, Jira & Confluence, AGILE Methodology.
+                  Vue.js, Vuex, Node.js, D3.js, Javascript, CSS, SCSS, Firebase, Git, Github Actions, Jira & Confluence,
+                  AGILE Methodology
                 </p>
                 <h4>about.</h4>
                 <p>
-                  Working within the Creative Technology Team on the development of web applications from concept to public
-                  release.
+                  Working within the creative technology team to build and deliver SPACEIN. An SPA with integrated video
+                  conferencing, that harnesses the data visualisation power of D3.js to create a shared digital environment.
                 </p>
+                <ul>
+                  <li>Integrated the Google Calendar API with native and desktop notifications and the Firebase Admin SDK./li>
+                  <li>Developed a dynamic styling interface so admin users can customise the appearance of the app. </li>
+                  <li>Refactored the core app functions, striving for best practices to ensure the most efficient app possible.</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -160,6 +183,7 @@
             <i class="devicon-threejs-original-wordmark"></i>
             <i class="devicon-illustrator-plain"></i>
             <i class="devicon-photoshop-plain"></i>
+            <i class="devicon-sketch-line-wordmark"></i>
           </div>
         </div>
       </section>
