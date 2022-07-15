@@ -604,6 +604,7 @@ p.stack {
   line-height: 1.5;
   font-size: 14px;
   letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
 }
 
 .about__skills i {

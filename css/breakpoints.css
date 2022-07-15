@@ -219,6 +219,16 @@
     .subheading {
         font-size: 1.2rem;
     }
+
+    .contact h3 {
+        margin: 2rem 4rem;
+        width: max-content;
+        font-size: 36px;
+    }
+
+    .contact i {
+        font-size: 36px;
+    }
 }
 
 @media (min-width: 1200px) {
