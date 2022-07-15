@@ -55,17 +55,6 @@ window.onload = function () {
   //   }
   // });
 
-  // idea 1
-  $('.corner').click(() => {
-    $('body').toggleClass('nav-active');
-    $('.corner-blob').toggle();
-    $('.corner-circle').toggle();
-  });
-  // idea 2
-  // $('.corner').click(() => {
-  //   $('body').toggleClass('nav-active');
-  // });
-
   var randomness = 200;
   var threshold = 100;
   var anim_duration = 700; //1000 = 1s
@@ -96,5 +85,11 @@ window.onload = function () {
       animate
     );
   };
-  animate();
+
+  // idea 1
+  $('.corner').click(() => {
+    $('body').toggleClass('nav-active');
+    $('.corner-blob').toggle();
+    animate();
+  });
 };
